@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="ticTacToe.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="ticTacToe.css">
+</head>
+<center>
+
+    <body>
+        <h2 class="h1Title">Tic Tac Toe</h1>
+            <table cellpadding="0" cellspacing="2">
+                <tr>
+                    <td onclick="setElement('td1',1)" id="td1"></td>
+                    <td onclick="setElement('td2',2)" id="td2"></td>
+                    <td onclick="setElement('td3',3)" id="td3"></td>
+                </tr>
+                <tr>
+                    <td onclick="setElement('td4',4)" id="td4"></td>
+                    <td onclick="setElement('td5',5)" id="td5"></td>
+                    <td onclick="setElement('td6',6)" id="td6"></td>
+                </tr>
+                <tr>
+                    <td onclick="setElement('td7',7)" id="td7"></td>
+                    <td onclick="setElement('td8',8)" id="td8"></td>
+                    <td onclick="setElement('td9',9)" id="td9"></td>
+                </tr>
+            </table>
+            <h3 id="h1FinishGame"></h3>
+            <!-- <div id="win_block"></div>-->
+            <input type="button" id="idNewGame" value="New Game" onclick="newGame()">
+            <input type="button" id="idUndoLastStep" value="Undo Last Step" onclick="undoLastStep()">
+            <input type="button" id="idHighestRecord" value="Highest Record" onclick="highestRecord()">
+            <input type="button" id="idSaveGame" value="Save Game" onclick="saveGame()">
+            <input type="button" id="idLoadGame" value="Load Game" onclick="loadGame()">
+
+    </body>
+</center>
+
+</html>
